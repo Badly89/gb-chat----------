@@ -6,22 +6,12 @@ body {
 
   background-repeat: repeat;
 }
-.main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 .wrap {
   display: flex;
   margin: auto;
   justify-content: center;
   align-items: center;
-  background: #ffffff;
-  box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.25);
-  border-radius: 12px;
-  border-radius: 12px;
 }
 .title {
   padding-top: 16px;
@@ -106,4 +96,55 @@ body {
   /* Основной цвет */
 
   color: #7fc485;
+}
+
+.far,
+.fab {
+  font-size: 28px;
+}
+
+.side-bar {
+  height: 100vh;
+  display: flex;
+
+  width: 5.5rem;
+  flex-direction: column;
+  flex-shrink: 0;
+  background: #7fc485;
+  justify-content: space-between;
+  __icon {
+    display: flex;
+  }
+}
+.main-field {
+  display: grid;
+  // grid-template-rows: repeat(2, 3fr);
+  grid-template-columns: repeat(2, auto);
+
+  gap: 30px;
+}
+.chat-list {
+  max-width: 440px;
+}
+
+.chat-list__title {
+}
+.form-select {
+  width: 110px;
+}
+.input-group {
+  width: 220px;
+}
+.form-select {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* Цвет заголовков */
+
+  color: #2b2e73;
+}
+.card-body {
+  border-radius: 12px;
+  padding: 32px;
 }
