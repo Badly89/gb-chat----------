@@ -18,41 +18,39 @@
     <main class="main-block">
         <div class="title">
             <img class="mb-4 logo" src="./image/logo.png" alt="">
-            <h1 class="h1-title mb-3  text-center">Вход в GBChat</h1>
+            <h1 class="h1-title mb-3  text-center">Регистрация</h1>
             <h3 class="h3-title mb-3  text-center">Какой-нибудь необычный слоган для пользователя.</h3>
         </div>
         <form class="form-signin form-floating pb-4">
             <div class="input-block">
                 <div class="form-floating pb-3">
-                    <input type="email" class="form-control input" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Введите имя</label>
+                    <input type="email" class="form-control input" id="name" placeholder="">
+                    <label for="name">Введите имя</label>
+                </div>
+                <div class="form-floating pb-3">
+                    <input type="email" class="form-control input" id="email" placeholder="name@example.com">
+                    <label for="email">Введите email</label>
                 </div>
 
-                <div class="form-floating pb-">
-                    <input type="password" class="form-control input" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Введите пароль</label>
+                <div class="form-floating pb-3">
+                    <input type="password" class="form-control input" id="password" placeholder="Password">
+                    <label for="password">Введите пароль</label>
+                </div>
+                <div class="form-floating pb-3">
+                    <input type="password" class="form-control input" id="passwordRepeat" placeholder="Password">
+                    <label for="passwordRepeat">Повторите пароль</label>
                 </div>
             </div>
 
-            <div class="checkbox mb-3">
-                <label class="px-3">
-                    <input type="checkbox" value="remember-me"> Запомнить меня
-                </label>
-                <label class="px-3">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="a-text">Забыли
-                        пароль</a>
-                </label>
-            </div>
-
-            <button class="btn btn-lg btn-success" type="submit">Войти</button>
+            <button class="btn btn-lg btn-success" type="submit">Регистрация</button>
 
         </form>
 
     </main>
 
     <div class="bottom-text">
-        <span class="px-3">У вас еще нет учетной записи?</span>
-        <a href="#" target="_blank" class="a-text">Зарегистрируйтесь.</a>
+        <span class="px-3">У вас уже есть учетная запись?</span>
+        <a href="#" target="_blank" class="a-text">Войти.</a>
     </div>
 
 
