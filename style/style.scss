@@ -1,22 +1,30 @@
 body {
-  font-family: "Roboto", sans-serif;
-}
-.parent {
-  background-size: contain;
-
-  background-repeat: repeat;
-}
-
-.wrap {
   display: flex;
-  margin: auto;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background: url("../image/background.png");
 }
-.title {
-  padding-top: 16px;
-  padding-left: 16px;
+
+.main-block {
+  width: 100%;
+  max-width: 512px;
+  padding: 15px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
 }
+
+// .form-signin .checkbox {
+//   font-weight: 400;
+// }
+
+//title table
 .h1-title {
   font-weight: bold;
   font-size: 40px;
@@ -30,45 +38,73 @@ body {
   font-size: 16px;
   line-height: 19px;
   padding: 0 58px;
-  /* identical to box height */
-
   text-align: center;
-
-  /* параграф */
-
   color: #626465;
 }
 .logo {
   width: 65px;
   height: 32px;
 }
-.inner {
+.form-signin {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
 }
-
-.form {
-  padding: 0 104px 44px 104px;
+.input-block {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
 }
-
 .input {
   width: 304px;
   height: 40px;
   border-radius: 12px;
+}
+
+.btn {
+  width: 304px;
+  background: #add9b1;
+  border-radius: 12px;
+  font-weight: bold;
   font-size: 16px;
+  line-height: 19px;
+
+  /* белый */
+
+  color: #ffffff;
 }
 
 .form-floating > .form-control,
 .form-floating > .form-select {
-  height: calc(3.5rem - 3px);
+  height: calc(2.75rem + 2px);
+  line-height: 1.25;
 }
-.btn-reg {
-  width: 304px;
-  height: 40px;
+
+.form-floating > label {
+  padding: 0.75rem 0.5rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #626465;
+}
+.a-text {
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #7fc485;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
 }
 
 .bottom-text {
   padding-top: 40px;
   display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 .bottom-text span {
@@ -78,73 +114,4 @@ body {
   /* параграф */
 
   color: #626465;
-}
-
-.form-check a {
-  font-size: 16px;
-  line-height: 19px;
-
-  /* Основной цвет */
-
-  color: #7fc485;
-}
-.a-text {
-  font-size: 16px;
-  line-height: 19px;
-  text-decoration: none;
-
-  /* Основной цвет */
-
-  color: #7fc485;
-}
-
-.far,
-.fab {
-  font-size: 28px;
-}
-
-.side-bar {
-  height: 100vh;
-  display: flex;
-
-  width: 5.5rem;
-  flex-direction: column;
-  flex-shrink: 0;
-  background: #7fc485;
-  justify-content: space-between;
-  __icon {
-    display: flex;
-  }
-}
-.main-field {
-  display: grid;
-  // grid-template-rows: repeat(2, 3fr);
-  grid-template-columns: repeat(2, auto);
-
-  gap: 30px;
-}
-.chat-list {
-  max-width: 440px;
-}
-
-.chat-list__title {
-}
-.form-select {
-  width: 110px;
-}
-.input-group {
-  width: 220px;
-}
-.form-select {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-
-  /* Цвет заголовков */
-
-  color: #2b2e73;
-}
-.card-body {
-  border-radius: 12px;
-  padding: 32px;
 }

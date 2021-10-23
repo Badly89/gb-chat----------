@@ -1,29 +1,31 @@
 @charset "UTF-8";
 body {
-  font-family: "Roboto", sans-serif;
-}
-
-.parent {
-  background-size: contain;
-  background-repeat: repeat;
-}
-
-.wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background: url("../image/background.png");
 }
 
-.title {
-  padding-top: 16px;
-  padding-left: 16px;
+.main-block {
+  width: 100%;
+  max-width: 512px;
+  padding: 15px;
+  margin: auto;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
 }
 
 .h1-title {
@@ -40,9 +42,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   padding: 0 58px;
-  /* identical to box height */
   text-align: center;
-  /* параграф */
   color: #626465;
 }
 
@@ -51,31 +51,77 @@ body {
   height: 32px;
 }
 
-.inner {
+.form-signin {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
 }
 
-.form {
-  padding: 0 104px 44px 104px;
+.input-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 16px;
 }
 
 .input {
   width: 304px;
   height: 40px;
   border-radius: 12px;
+}
+
+.btn {
+  width: 304px;
+  background: #add9b1;
+  border-radius: 12px;
+  font-weight: bold;
   font-size: 16px;
+  line-height: 19px;
+  /* белый */
+  color: #ffffff;
 }
 
 .form-floating > .form-control,
 .form-floating > .form-select {
-  height: calc(3.5rem - 3px);
+  height: calc(2.75rem + 2px);
+  line-height: 1.25;
 }
 
-.btn-reg {
-  width: 304px;
-  height: 40px;
+.form-floating > label {
+  padding: 0.75rem 0.5rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #626465;
+}
+
+.a-text {
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #7fc485;
+}
+
+.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bottom-text {
@@ -83,6 +129,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -92,82 +141,5 @@ body {
   line-height: 19px;
   /* параграф */
   color: #626465;
-}
-
-.form-check a {
-  font-size: 16px;
-  line-height: 19px;
-  /* Основной цвет */
-  color: #7fc485;
-}
-
-.a-text {
-  font-size: 16px;
-  line-height: 19px;
-  text-decoration: none;
-  /* Основной цвет */
-  color: #7fc485;
-}
-
-.far,
-.fab {
-  font-size: 28px;
-}
-
-.side-bar {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 5.5rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  background: #7fc485;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.side-bar __icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main-field {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
-  gap: 30px;
-}
-
-.chat-list {
-  max-width: 440px;
-}
-
-.form-select {
-  width: 110px;
-}
-
-.input-group {
-  width: 220px;
-}
-
-.form-select {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  /* Цвет заголовков */
-  color: #2b2e73;
-}
-
-.card-body {
-  border-radius: 12px;
-  padding: 32px;
 }
 /*# sourceMappingURL=style.css.map */
