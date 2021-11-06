@@ -1,8 +1,8 @@
 .main-window {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.25fr 2fr 3fr;
-      grid-template-columns: 0.25fr 2fr 3fr;
+  -ms-grid-columns: 0.25fr 1.5fr 3fr;
+      grid-template-columns: 0.25fr 1.5fr 3fr;
   -ms-grid-rows: 2fr;
       grid-template-rows: 2fr;
   gap: 0px 0px;
@@ -56,6 +56,16 @@
 .group-chats {
   background: #eff1f1;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .title {
@@ -154,6 +164,9 @@
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: messageList;
+  background: url("../image/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title-welcome {

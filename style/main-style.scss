@@ -1,6 +1,6 @@
 .main-window {
   display: grid;
-  grid-template-columns: 0.25fr 2fr 3fr;
+  grid-template-columns: 0.25fr 1.5fr 3fr;
   grid-template-rows: 2fr;
   gap: 0px 0px;
   grid-template-areas: "sideBar chatList messageList";
@@ -35,6 +35,9 @@
 .group-chats {
   background: #eff1f1;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .title {
@@ -110,6 +113,9 @@
 //.messageList
 .messageList {
   grid-area: messageList;
+  background: url("../image/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .title-welcome {
   font-weight: bold;
